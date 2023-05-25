@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  admin-ui:
+    build: ./web/.
+    ports:
+      - 80:80
+  client:
+    build: ./client/.
+    ports:
+      - 1323:1323
+  pb:
+    build: ./pb/.
+    ports:
+      - 8090:8090
+  docs:
+    build: ./docs/.
+    ports:
+      - 3000:3000
